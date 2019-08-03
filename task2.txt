@@ -1,0 +1,67 @@
+int f;
+int d=1;
+ while(d==1){
+Console.WriteLine("enter your array size");
+int size =int.Parse(Console.ReadLine());
+Console.WriteLine("how many pages you want to show your items");
+int n_pages =int.Parse(Console.ReadLine());
+string []r_array=new string[size];
+int i=0;
+int x=size;
+
+//---------------------------------------111111111111
+ for (i=0;i<size;i++)
+{
+    Console.WriteLine("enter your items"+(1+i));
+    r_array[i]=Console.ReadLine();
+}
+
+
+
+ for (i=0;i<size;i++)
+{
+    Console.WriteLine(r_array[i]);
+}
+
+ 
+while(size%n_pages!=0)
+{
+size++;
+}
+Console.WriteLine(size);
+
+//------------------------------------------111111111111
+//2222222222222222222222222222
+
+string []f_array=new string[size];
+for (i=0;i<size;i++)
+{
+f_array[i]="no value";
+}
+
+for (i=0;i<x;i++)
+{
+f_array[i]=r_array[i];
+}
+for(i=0;i<size;i++)
+{
+Console.WriteLine(f_array[i]);
+}
+while(1==1){
+int page_capacity=size/n_pages;
+Console.WriteLine("enter your page number from 0 to"+(n_pages-1));
+int page_number=int.Parse(Console.ReadLine());
+int start=page_number;
+
+for (i=start;i<start+page_capacity;i++)
+{
+
+    Console.WriteLine(f_array[i]);
+}}
+
+
+Console.WriteLine("if you want to continue 1 no 0 ");
+ d=int.Parse(Console.ReadLine());
+        
+        }}
+        }}
